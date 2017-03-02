@@ -12,7 +12,6 @@ public class stackTest {
 		stack stackObj = new stack();
 		int testValue = 4;
 		stackObj.push(testValue);
-		
 		int result = stackObj.top();
 		Assert.assertEquals(testValue, result);
 	}
@@ -22,9 +21,7 @@ public class stackTest {
 		stack stackObj = new stack();
 		boolean result = stackObj.isEmpty();		
 		Assert.assertEquals(true, result);
-		
-		stackObj.push(888);
-		
+		stackObj.push(888);		
 		result = stackObj.isEmpty();
 		Assert.assertEquals(false, result);
 	}
@@ -38,7 +35,6 @@ public class stackTest {
 			Assert.assertEquals(false, result);
 			stackObj.push(888);
 		}
-		
 		boolean result = stackObj.isFull();
 		Assert.assertEquals(true, result);
 	}
