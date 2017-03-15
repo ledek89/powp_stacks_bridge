@@ -2,7 +2,7 @@ package edu.kis.vh.stacks.list;
 
 public class Node {
 
-	private int value;		//po hermetyzacji pól, dostęp do nich z StackList odbywa się poprzez gettery i settery
+	private final int value;		//po hermetyzacji pól, dostęp do nich z StackList odbywa się poprzez gettery i settery
 	private Node prev;
 	private Node next;
 
