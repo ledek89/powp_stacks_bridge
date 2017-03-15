@@ -1,7 +1,7 @@
 package edu.kis.vh.stacks;
 
 public class Stack {
-	final int EMPTY_STACK_VALUE = -1;
+	final int EMPTY_STACK_VALUE = -1;//zrobione już wcześniej
 	final int FULL_STACK_VALUE = 11;
 
 	private int[] ITEMS = new int[12];	
