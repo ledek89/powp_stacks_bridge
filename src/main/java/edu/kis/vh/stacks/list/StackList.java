@@ -2,6 +2,7 @@ package edu.kis.vh.stacks.list;
 
 public class StackList {
 
+	//uzyteczna okazala się opcja Source → Generate Delegate Methods
 	private Node last;
 
 	public void pushElement(int i) {
