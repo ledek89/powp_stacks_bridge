@@ -1,10 +1,16 @@
 package edu.kis.vh.stacks;
 
-/**
- * @author Błażej Lewandowski
- *
- */
 public class Stack {
+	public Stack(int total, StackArray stackArray) {
+		super();
+		this.total = total;
+		this.stackArray = stackArray;
+	}
+	
+	public Stack(){
+		this.stackArray = new StackArray();
+	}
+
 	final int EMPTY_STACK_VALUE = -1;//zrobione już wcześniej
 	final int FULL_STACK_VALUE = 11;
 
@@ -12,51 +18,30 @@ public class Stack {
 
 	private int total = EMPTY_STACK_VALUE;
 	
-	/**
-	 * @return total number of elements
-	 */
+	private StackArray stackArray;
+
 	public int getTotal() {
-		return total;
+		return stackArray.getTotal();
 	}
 
-	/**
-	 * @param i number to be pushed on stack
-	 */
 	public void push(int i) {
-		if (!isFull())
-		ITEMS[++total] = i;
+		stackArray.push(i);
 	}
-	
-	/**
-	 * @return 'true' if stack is empty
-	 */
+
 	public boolean isEmpty() {
-		return total == EMPTY_STACK_VALUE;
+		return stackArray.isEmpty();
 	}
-	
-	/**
-	 * @return 'true' if stack is full
-	 */
+
 	public boolean isFull() {
-		return total == FULL_STACK_VALUE;
+		return stackArray.isFull();
 	}
-		
-	/**
-	 * @return number from the top of the stack
-	 */
+
 	public int top() {
-		if (isEmpty())
-			return EMPTY_STACK_VALUE;
-		return ITEMS[total];
+		return stackArray.top();
+	}
+
+	public int pop() {
+		return stackArray.pop();
 	}
 			
-	/**
-	 * @return number from the top of the stack and removes it from the stack
-	 */
-	public int pop() {
-		if (isEmpty())
-			return EMPTY_STACK_VALUE;
-		return ITEMS[total--];
-	}
-				
 }
