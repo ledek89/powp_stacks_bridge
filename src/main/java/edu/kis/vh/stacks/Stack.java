@@ -4,6 +4,11 @@ import edu.kis.vh.stacks.types.StackList;
 
 //dzięki zmianie możemy wykorzystywać dowolną klasę implementującą intefejs IStack
 
+//F3 przenosi nas do deklaracji metody w interfejsie
+//ctrl + t ukazuje nam interfejsy oraz klasy w ktorych zaimplementowana daną metodę
+//po najechaniu kursorem myszy na daną metodę przy wcisniejszym klawiszu ctrl, możemy wybrać czy chcemy przenieść się w miejsce
+//gdzie metoda została zadeklarowana, bąd przejrzeć implementacje danej metody w roznych klasach
+
 public class Stack {
 	public Stack(StackList stackList) {
 		super();
