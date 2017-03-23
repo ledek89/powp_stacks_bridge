@@ -2,6 +2,8 @@ package edu.kis.vh.stacks;
 
 import edu.kis.vh.stacks.list.StackList;
 
+//dzięki zmianie możemy wykorzystywać dowolną klasę implementującą intefejs IStack
+
 public class Stack {
 	public Stack(StackList stackList) {
 		super();
