@@ -10,7 +10,7 @@ import edu.kis.vh.stacks.types.StackList;
 //gdzie metoda została zadeklarowana, bąd przejrzeć implementacje danej metody w roznych klasach
 
 public class Stack {
-	public Stack(StackList stackList) {
+	public Stack(IStack stackList) {
 		super();
 		this.stackList = stackList;
 	}

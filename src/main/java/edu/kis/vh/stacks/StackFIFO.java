@@ -9,7 +9,7 @@ public class StackFIFO extends Stack {
 		// TODO Auto-generated constructor stub
 	}
 
-	public StackFIFO(StackList stackList) {
+	public StackFIFO(IStack stackList) {
 		super(stackList);
 		// TODO Auto-generated constructor stub
 	}
