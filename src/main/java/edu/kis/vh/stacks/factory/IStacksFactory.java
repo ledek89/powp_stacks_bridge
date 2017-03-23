@@ -4,6 +4,8 @@ import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.StackFIFO;
 import edu.kis.vh.stacks.StackHanoi;
 
+//zasade izolacji łamią fabryki - zwracane abstrakcje są zależne od implementacji w fabrykach
+
 public interface IStacksFactory {
 	Stack getStandardStack();
 	Stack getFalseStack();
