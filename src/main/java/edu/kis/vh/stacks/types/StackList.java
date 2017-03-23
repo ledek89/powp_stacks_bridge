@@ -6,7 +6,6 @@ public class StackList implements IStack{
 
 	//uzyteczna okazala się opcja Source → Generate Delegate Methods
 	private Node last;
-
 	public void push(int i) {
 		if (last == null)
 			last = new Node(i);
@@ -27,13 +26,13 @@ public class StackList implements IStack{
 
 	public int top() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK_VALUE;
 		return last.getValue();
 	}
 
 	public int pop() {
 		if (isEmpty())
-			return -1;
+			return EMPTY_STACK_VALUE;
 		int poppedOutValue = last.getValue();
 		last = last.getPrev();
 		return poppedOutValue;
