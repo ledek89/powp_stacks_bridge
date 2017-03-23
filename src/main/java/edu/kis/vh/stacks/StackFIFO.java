@@ -14,7 +14,8 @@ public class StackFIFO extends Stack {
 		// TODO Auto-generated constructor stub
 	}
 
-	private final Stack temp = new Stack();
+	//najlepsza bedzie StackList ze względu na mechanizm usuwania elementów
+	private final Stack temp = new Stack(new StackList());
 	
 	@Override
 	public int pop() {
