@@ -3,6 +3,9 @@ package edu.kis.vh.stacks.demo;
 import edu.kis.vh.stacks.StackHanoi;
 import edu.kis.vh.stacks.Stack;
 import edu.kis.vh.stacks.factory.DefaultStacksFactory;
+import edu.kis.vh.stacks.factory.StackArrayFactory;
+import edu.kis.vh.stacks.factory.StackListFactory;
+import edu.kis.vh.stacks.factory.IStacksFactory;
 
 //w linia 31 i 33 zbędne entery
 //linia java.util.Random rn = new java.util.Random(); oraz 2 kolejne fory przesunięte jeden tab w lewo
@@ -13,11 +16,15 @@ class StacksDemo {
 
 	public static void main(String[] args) {
 		DefaultStacksFactory factory = new DefaultStacksFactory();
+		StackArrayFactory sAFactory = new StackArrayFactory();
+		StackListFactory sLFactory = new StackListFactory();
 
 		testStacks(factory);
+		testStacks(sAFactory);
+		testStacks(sLFactory);
 	}
 
-	private static void testStacks(DefaultStacksFactory factory) {
+	private static void testStacks(IStacksFactory factory) {
 		Stack[] stacks = { factory.getStandardStack(), factory.getFalseStack(), factory.getFIFOStack(),
 				factory.getHanoiStack() };
 
